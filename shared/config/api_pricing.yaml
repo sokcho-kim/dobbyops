@@ -1,0 +1,35 @@
+# API 단가 설정 (2025-12 기준)
+# 가격 변동 시 업데이트 필요
+
+upstage:
+  document_parse:
+    unit: page
+    price_usd: 0.02
+  ocr:
+    unit: page
+    price_usd: 0.01
+
+openai:
+  gpt-4o:
+    input_per_1m: 2.50
+    output_per_1m: 10.00
+  gpt-4o-mini:
+    input_per_1m: 0.15
+    output_per_1m: 0.60
+  gpt-4-turbo:
+    input_per_1m: 10.00
+    output_per_1m: 30.00
+  gpt-3.5-turbo:
+    input_per_1m: 0.50
+    output_per_1m: 1.50
+
+anthropic:
+  claude-3-opus:
+    input_per_1m: 15.00
+    output_per_1m: 75.00
+  claude-3-sonnet:
+    input_per_1m: 3.00
+    output_per_1m: 15.00
+  claude-3-haiku:
+    input_per_1m: 0.25
+    output_per_1m: 1.25
