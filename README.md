@@ -92,9 +92,6 @@ DobbyOps는 글로벌 스킬입니다. 프로젝트별 스킬과 함께 사용�
 - **Track everything**: 모든 유료 API 사용은 기록
 - **Keep it simple**: 복잡한 건 싫어요
 
-## Skillton 2026
-
-[AI Builders 3rd Meetup - Skillton](https://team-attention.com/)
 
 2026년 1월 24일 (토) @ Naver D2SF
 
