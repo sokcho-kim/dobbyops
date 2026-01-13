@@ -37,7 +37,22 @@ Get-ChildItem C:/Users/sokch/Downloads -Filter "*.msi" | Sort-Object Length -Des
 Get-ChildItem C:/Users/sokch/Downloads | Where-Object { $_.Name -match '\(\d+\)' }
 ```
 
-### 4. Git 레포지토리
+### 4. Claude Code 임시 파일
+```bash
+# 프로젝트 루트의 tmpclaude 파일 확인
+find C:/Jimin -maxdepth 2 -name "tmpclaude-*" -type f 2>/dev/null
+
+# 삭제
+find C:/Jimin -maxdepth 2 -name "tmpclaude-*" -type f -delete 2>/dev/null
+```
+
+**정리 기준:**
+- `tmpclaude-*` 패턴의 모든 파일 삭제
+- 세션 종료 후 남은 임시 파일
+
+> `.gitignore`에 `tmpclaude-*` 패턴 추가 권장
+
+### 5. Git 레포지토리
 ```bash
 # C:/Jimin 레포 목록
 ls -la C:/Jimin/
